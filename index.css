@@ -109,6 +109,7 @@ h3.name {
 	border-radius: 0;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .versions i:before {
