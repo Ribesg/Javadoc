@@ -1,0 +1,138 @@
+body {
+  color: #333;
+	max-width: 60%;
+	text-align: center;
+	margin: auto;
+	font-family: sans-serif;
+  background-color: #EEE;
+}
+
+.title-icon {
+  visibility: visible;
+}
+
+header {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 1736px) {
+  body {
+    max-width: 67.6%;
+  }
+}
+
+@media (max-width: 1552px) {
+  body {
+    max-width: 75.2%;
+  }
+}
+
+@media (max-width: 1368px) {
+  body {
+    max-width: 82.8%;
+  }
+}
+
+@media (max-width: 1184px) {
+  body {
+    max-width: 90.4%;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    max-width: 98%;
+  }
+  
+  header {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    font-size: 1.05em;
+  }
+}
+
+header h1 {
+	margin: 15px;
+	padding: 0;
+}
+
+header h1 span {
+  margin: 0 50px;
+}
+
+.projectsContainer {
+  border-radius: 3px;
+  margin-bottom: 19px;
+  padding: 20px 15px 0;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projectContainer {
+  margin-bottom: 20px;
+}
+
+.project {
+	padding: 0;
+	border: 1px solid #DDD;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+  margin: 0 5px;
+}
+
+h3 {
+	background-color: #EEE;
+	font-size: 2em;
+}
+
+h3.name {
+  margin: 0;
+  padding: 7px 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.versions {
+	margin: 0;
+}
+
+.versions a {
+	font-size: 1.25em;
+	border-top: 1px solid #DDD;
+	border-radius: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.versions i:before {
+  position: absolute;
+  left: 10px;
+  top: 0.6em;
+  text-shadow: 0 0 10px rgba(150, 150, 150, 0.5);
+}
+
+.versions a:last-of-type {
+	border-radius: 0;
+}
+
+.button-release,
+.button-snapshot {
+	color: #008FEC;
+  font-weight: bold;
+  background-color: #FAFAFA;
+}
+
+.fa.fa-check-circle {
+  color: #00A200;
+}
+
+.fa.fa-exclamation-circle {
+  color: #FFA400;
+}

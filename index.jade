@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+
+    title Javadocs!
+    meta(name="description" content="Ribesg's Javadocs Website")
+    meta(name="author" content="Ribesg")
+
+    link(rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?pure/0.4.2/base-min.css&pure/0.4.2/grids-min.css&pure/0.4.2/buttons-min.css")
+    link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet")
+    link(rel="stylesheet" type="text/css" href="index.css")
+  body
+    header
+      h1
+        i.fa.fa-book.title-icon
+        span Javadocs!
+        i.fa.fa-book.title-icon
+      .sub.header
+        | Use the fecking Google Chrome!
+    if (projects)
+      .projectsContainer
+        .projects.pure-g-r
+          each project in projects
+            .projectContainer.pure-u-1-3
+              .project
+                h3.name= project.name
+                .versions.pure-g-r
+                  if (project.snapshot)
+                    a.pure-u-1-1.button-snapshot.pure-button(href='/'+project.name+'/'+project.snapshot)
+                      i.fa.fa-exclamation-circle
+                      = project.snapshot
+                  if (project.releases)
+                    each version in project.releases
+                      a.pure-u-1-1.button-release.pure-button(href='/'+project.name+'/'+version)
+                        i.fa.fa-check-circle
+                        = version
+    else
+      h2 No projects
