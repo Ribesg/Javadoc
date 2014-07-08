@@ -4,7 +4,7 @@ var http = require('http');
 var express = require('express');
 var app = express();
 
-var ignoredRegex = /^node_modules$/;
+var ignoredRegex = /^(?:node_modules|.git)$/;
 var snapRegex = /-SNAPSHOT$/;
 
 app.set('view engine', 'jade');
